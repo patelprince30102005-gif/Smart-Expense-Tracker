@@ -1,0 +1,149 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-header {
+  background-color: #6200EE;
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.user-profile {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #3a3f47;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #3a3f47;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+}
+
+.user-icon {
+  font-size: 30px;
+  color: #ccc;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.user-role {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 20px 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.nav-item:hover {
+  background-color: #3a3f47;
+  border-left-color: #6200EE;
+}
+
+.nav-item.active {
+  background-color: #6200EE;
+  border-left-color: #6200EE;
+}
+
+.nav-icon {
+  font-size: 20px;
+  margin-right: 15px;
+  width: 24px;
+  text-align: center;
+}
+
+.nav-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid #3a3f47;
+}
+
+.logout-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #3a3f47;
+}
+
+.logout-btn .nav-icon {
+  margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    border-left: none;
+  }
+  
+  .nav-item.active {
+    border-left: none;
+  }
+} 
